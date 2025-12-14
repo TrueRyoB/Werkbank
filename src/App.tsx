@@ -1,6 +1,8 @@
 import './App.css'
 
 import Stopwatch from './components/Stopwatch'
+import AsciiContainer from './components/AsciiContainer'
+import InputField from './components/InputField'
 
 function App() {
 
@@ -21,10 +23,8 @@ function App() {
             <span id="clear-input" className="bg-green-800 py-0.5 px-1 br-1 rounded text-white">clear</span>
           </div>
         </div>
-        <div className="input-field w-full h-[90%] flex flex-col items-end pb-1">
-          <textarea id="input-text" className="flex-grow w-full p-2 resize-none" placeholder="Insert some texts here..."></textarea>
-          <span className="text-gray-500">expected: 20:13</span>
-        </div>
+        <span className="block h-[8px]"></span>
+        <InputField />
       </div>
       {/* Output pane */}
       <div className="output-pane bg-gray-100 py-5 px-2 flex flex-col items-center justify-start gap-[8px]">
@@ -36,7 +36,7 @@ function App() {
           <Stopwatch/>
         </div>
         {/* Ascii art container */}
-        <div className="ascii-container w-full">
+        <div className="ascii-pane w-full">
           <div className="header flex flex-row justify-between w-full p-2 gap-[4px]">
             <span>Bonsai art</span>
             <div className="flex flex-row gap-[4px] justify-center items-center">
@@ -44,9 +44,7 @@ function App() {
               <span id="share-URL" className="bg-green-800 py-0.5 px-1 br-1 rounded text-white">share URL</span>
             </div>
           </div>
-          <div className="ascii-field bg-black p-1 w-full h-100">
-            <pre id="output-ascii"></pre>
-          </div>
+          <AsciiContainer/>
         </div>
       </div>
     </div>
