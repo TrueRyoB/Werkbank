@@ -1,5 +1,6 @@
 # Werkbank
-An extension of [Bonsai HG](https://github.com/TrueRyoB/BonsaiHG).
+Still under development! <br>
+This is an inheritance of [Bonsai HG](https://github.com/TrueRyoB/BonsaiHG) adept at a higher maintainability.
 
 # Tech stack
 - react
