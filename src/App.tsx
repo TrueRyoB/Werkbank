@@ -12,8 +12,17 @@ function App() {
     {/* Main */}
     <div className="main">
       {/* Input pane */}
-      <div className="input-pane">
-
+      <div className="input-pane bg-gray-100 py-1 px-2">
+        <div className="header flex flex-row justify-between">
+          <span>Input Field</span>
+          <div className="btn-container">
+            <span className="bg-green-800 py-0.5 px-1 br-1 rounded text-white">clear</span>
+          </div>
+        </div>
+        <div className="input-field w-full flex flex-col items-end">
+          <textarea id="input-text" className="w-full p-2 resize-none" placeholder="Insert some texts here..."></textarea>
+          <span className="text-gray-500">expected: 20:13</span>
+        </div>
       </div>
       {/* Output pane */}
       <div className="output-pane">
