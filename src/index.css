@@ -14,6 +14,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.text-primary {
+  color: #333;
+}
+
+.font-brand {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .bg-primary {
   background-color: oklch(39.3% 0.095 152.535);
 }

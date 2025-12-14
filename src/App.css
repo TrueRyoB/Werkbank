@@ -16,11 +16,21 @@
     overflow-x: hidden;
     overflow-y: scroll;
     position: relative;
+    width: 90%;
+    align-self: center;
+    gap: 0;
   }
   .input-pane {
-    height: 25vh;
+    height: 35vh;
     position: sticky;
-    top: 0;
+    top: -1px;
+    border-bottom: 4px solid #fff;
+  }
+  .output-pane {
+    border-radius: 4px;
+  }
+  .elaboration.filler {
+    display: none;
   }
 }
 
