@@ -6,6 +6,24 @@
   overflow: hidden;
 }
 
+.main.grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media(max-width: 600px) {
+  .main.grid {
+    grid-template-columns: 1fr;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+  }
+  .input-pane {
+    height: 25vh;
+    position: sticky;
+    top: 0;
+  }
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

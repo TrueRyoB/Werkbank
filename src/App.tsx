@@ -14,7 +14,7 @@ function App() {
       <span>A browser text editor that generates bonsai based on your hashed text.</span>
     </div>
     {/* Main */}
-    <div className="main grid grid-cols-2 bg-white gap-[4px] flex-grow w-full">
+    <div className="main grid bg-white gap-[4px] flex-grow w-full">
       {/* Input pane */}
       <div className="input-pane bg-gray-100 py-1 px-2">
         <div className="header flex flex-row justify-between">
