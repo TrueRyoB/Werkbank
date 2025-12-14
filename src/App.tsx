@@ -1,5 +1,7 @@
 import './App.css'
 
+import Stopwatch from './components/Stopwatch'
+
 function App() {
 
   return (
@@ -10,7 +12,7 @@ function App() {
       <span>A browser text editor that generates bonsai based on your hashed text.</span>
     </div>
     {/* Main */}
-    <div className="main">
+    <div className="main grid grid-cols-2 bg-white gap-[4px]">
       {/* Input pane */}
       <div className="input-pane bg-gray-100 py-1 px-2">
         <div className="header flex flex-row justify-between">
@@ -25,10 +27,10 @@ function App() {
         </div>
       </div>
       {/* Output pane */}
-      <div className="output-pane">
+      <div className="output-pane bg-gray-100 py-1 px-2">
         {/* Clock container */}
         <div className="clock-container">
-
+          <Stopwatch/>
         </div>
         {/* Ascii art container */}
         <div className="ascii-container">
