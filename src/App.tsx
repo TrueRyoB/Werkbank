@@ -4,23 +4,29 @@ function App() {
 
   return (
     <>
-     <div className="header flex flex-col gap-[5px] bg-green-900 text-white p-4">
-      <span>Werkbank</span>
-      <span>It will generate a hashed content based on texts in an input field.</span>
-     </div>
-     <div className="main">
+    {/* header */}
+    <div className="header flex flex-col gap-[5px] bg-green-900 text-white p-4">
+      <span className="text-2xl">Werkbank</span>
+      <span>A browser text editor that generates bonsai based on your hashed text.</span>
+    </div>
+    {/* Main */}
+    <div className="main">
+      {/* Input pane */}
       <div className="input-pane">
 
       </div>
+      {/* Output pane */}
       <div className="output-pane">
+        {/* Clock container */}
         <div className="clock-container">
 
         </div>
+        {/* Ascii art container */}
         <div className="ascii-container">
 
         </div>
       </div>
-     </div>
+    </div>
     </>
   )
 }
